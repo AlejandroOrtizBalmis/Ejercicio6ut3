@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ejercicio6ut3"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Las 4 estaciones" Height="450" Width="800"
+        Background="Purple"
+        Icon="weather.ico">
     <DockPanel LastChildFill="True">
         <TextBlock DockPanel.Dock="Top" 
                    Text="Las 4 Estaciones"
@@ -26,7 +28,26 @@
             </TextBlock.Foreground>
         </TextBlock>
         <UniformGrid>
-            
+            <ScrollViewer HorizontalScrollBarVisibility="Auto"
+                          VerticalScrollBarVisibility="Auto"
+                          Margin="5">
+            <Image Source="primavera.jpg" />
+            </ScrollViewer>
+            <ScrollViewer HorizontalScrollBarVisibility="Auto"
+                          VerticalScrollBarVisibility="Auto"
+                          Margin="5">
+            <Image Source="verano.jpg" />
+            </ScrollViewer>
+            <ScrollViewer HorizontalScrollBarVisibility="Auto"
+                          VerticalScrollBarVisibility="Auto"
+                          Margin="5">
+            <Image Source="otoño.jpg" />
+            </ScrollViewer>
+            <ScrollViewer HorizontalScrollBarVisibility="Auto"
+                          VerticalScrollBarVisibility="Auto"
+                          Margin="5">
+            <Image Source="invierno.jpg" />
+            </ScrollViewer>
         </UniformGrid>
     </DockPanel>
 </Window>
